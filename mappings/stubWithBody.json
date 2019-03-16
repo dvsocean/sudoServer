@@ -1,0 +1,20 @@
+{
+    "id": "224c3e8e-d325-30e8-bc1f-2f06c1b45dd9",
+  "request": {
+    "url": "/test/route/for/singleStub",
+    "method": "GET",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"pin\":\"1234\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"results\":\"complete transfer\"}",
+    "headers": {
+      "Content-Type": "application/json;charset=utf-8"
+    }
+  },
+    "uuid": "224c3e8e-d325-30e8-bc1f-2f06c1b45dd9"
+}

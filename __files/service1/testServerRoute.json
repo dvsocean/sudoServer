@@ -1,0 +1,5 @@
+{
+    "token_type": "Bearer",
+    "expires_in": 555,
+    "idle_exp": 2222
+}

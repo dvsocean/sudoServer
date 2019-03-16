@@ -1,0 +1,20 @@
+{
+    "id": "224c3e8e-d325-30e8-bc1f-2f06c1b45dd9",
+  "request": {
+    "url": "/test/route/for/secondservice",
+    "method": "PUT",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"code\":\"9999\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "service2/secondService.json",
+    "headers": {
+      "Content-Type": "application/json;charset=utf-8"
+    }
+  },
+    "uuid": "224c3e8e-d325-30e8-bc1f-2f06c1b45dd9"
+}

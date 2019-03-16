@@ -1,0 +1,5 @@
+
+  curl -H "Content-Type: application/json" -d '{"pin":"1234","securityQuestions":"and then answers"}' -X POST http://localhost:<port>/test/server/route
+
+  or a more excplicit format,
+  curl --header "Content-Type: application/json" --data '{"pin":"1234","securityQuestions":"and then answers"}' -X POST http://localhost:<port>/test/server/route

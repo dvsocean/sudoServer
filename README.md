@@ -2,7 +2,7 @@
 1. To launch a standalone server run "java -jar wiremock-standalone-2.20.0.jar". 
 This command will create two directories, "__files" and "mappings" (if they dont already exist).
 When wiremock starts, by default it will spin up on port 8080 or you can specify a different 
-port like this, "java -jar wiremock-standalone-2.20.0.jar --port <\port\>".
+port like this, "java -jar wiremock-standalone-2.20.0.jar --port \<port\>".
 
 2. The __files directory serves as the root for files, in other words, if you place in it a file 
 called randomFileDemonstration.html, once the server starts you can access it like you would any 

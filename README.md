@@ -30,7 +30,7 @@ flag I found handy is the --root-dir flag, this tells wiremock to store all the 
 particular directory. So say you have, 5 different services that could possibly send a response or receive 
 a request..you can listen to all of them at once and for each service you can specify --root-dir
 /User/user/Desktop/HttpTraffic/service1, --root-dir /User/user/Desktop/HttpTraffic/service2, 
---root-dir /User/user/Desktop/HttpTraffic/service3..etc. This will create one folder on your desktop 
+--root-dir /User/\<user\>/Desktop/HttpTraffic/service3..etc. This will create one folder on your desktop 
 called "HttpTraffic" and inside you will find a folder for each service (service1,service2,service3..etc). 
 Inside each service folder you will find a __files and a mappings directory where the recorded stubs can 
 be found. 

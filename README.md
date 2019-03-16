@@ -8,7 +8,7 @@ port like this, "java -jar wiremock-standalone-2.20.0.jar --port \<port\>".
 
 2. The __files directory serves as the root for files, in other words, if you place in it a file 
 called randomFileDemonstration.html, once the server starts you can access it like you would any 
-website, just open your browser and type http://localhost:/\<port\>/randomFileDemonstration.html
+website, just open your browser and type http://localhost://\<port\>/randomFileDemonstration.html
 
 3. The mappings directory serves as the root for json files. You can place your req/res stubs in
 it and it will serve them if the route matches. Currently, there is a stub called "stubWithBody.json"

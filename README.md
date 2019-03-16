@@ -9,7 +9,7 @@ called randomFileDemonstration.html, once the server starts you can access it li
 website, just open your browser and type http://localhost:<port>/randomFileDemonstration.html
 
 3. The mappings directory serves as the root for json files. You can place your req/res stubs in
-it and it will server them if the route matches. Currently, there is a stub called "stubWithBody.json"
+it and it will serve them if the route matches. Currently, there is a stub called "stubWithBody.json"
 and it contains the request and the response. You can make a curl request and test it. Or, in the 
 mapping file, for the response, you can also indicate "bodyFileName": "path/to/file.json". Using this 
 method requires that you actually place the response file in the __files directory, else if the 

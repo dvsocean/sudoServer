@@ -2,11 +2,11 @@
 1. To launch a standalone server run "java -jar wiremock-standalone-2.20.0.jar". 
 This command will create two directories, "__files" and "mappings" (if they dont already exist).
 When wiremock starts, by default it will spin up on port 8080 or you can specify a different 
-port like this, "java -jar wiremock-standalone-2.20.0.jar --port portNumber".
+port like this, "java -jar wiremock-standalone-2.20.0.jar --port <\port\>".
 
 2. The __files directory serves as the root for files, in other words, if you place in it a file 
 called randomFileDemonstration.html, once the server starts you can access it like you would any 
-website, just open your browser and type http://localhost:portNumber/randomFileDemonstration.html
+website, just open your browser and type http://localhost:<\port\>/randomFileDemonstration.html
 
 3. The mappings directory serves as the root for json files. You can place your req/res stubs in
 it and it will serve them if the route matches. Currently, there is a stub called "stubWithBody.json"
@@ -23,14 +23,14 @@ all your APIs are properly responding. You can capture this behavior for when an
 to misbehave. I recommend making a directory for the wiremock-standalone-2.20.0.jar since you will end
 up using it for a few things. To record just execute 
 "java -jar wiremock-standalone-2.20.0.jar --proxy-all http://url/to/your/service --record-mappings 
---port portNumber --root-dir path/to/directory" from the directory where wiremock-standalone-2.20.0.jar
+--port <\port\> --root-dir <\path/to/directory\>" from the directory where wiremock-standalone-2.20.0.jar
 resides. Lets break this down. The --proxy-all flag tells wiremock to direct all (req and res) traffic
 thru the indicated port. --record-mappings flag instructs wiremock to record the traffic. The other
 flag I found handy is the --root-dir flag, this tells wiremock to store all the recorded mappings in a
 particular directory. So say you have, 5 different services that could possibly send a response or receive 
 a request..you can listen to all of them at once and for each service you can specify --root-dir
-/User/user/Desktop/HttpTraffic/service1, --root-dir /User/user/Desktop/HttpTraffic/service2, 
---root-dir /User/\<user\>/Desktop/HttpTraffic/service3..etc. This will create one folder on your desktop 
+/User/<\user\>/Desktop/HttpTraffic/service1, --root-dir /User/<\user\>/Desktop/HttpTraffic/service2, 
+--root-dir /User/<\user\>/Desktop/HttpTraffic/service3..etc. This will create one folder on your desktop 
 called "HttpTraffic" and inside you will find a folder for each service (service1,service2,service3..etc). 
 Inside each service folder you will find a __files and a mappings directory where the recorded stubs can 
 be found. 

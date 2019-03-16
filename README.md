@@ -37,7 +37,7 @@ called "HttpTraffic" and inside you will find a folder for each service (service
 Inside each service folder you will find a __files and a mappings directory where the recorded stubs can 
 be found. 
 
-5. In the request, a stub will look for bodyPatterns, those patterns will usually be under "equalToJson". 
+5. In the request, a stub will seek bodyPatterns, those patterns will usually be under "equalToJson". 
 Your request could have a lot of different parameters but undersatnd that a match will occur when the 
 specified parameters are found (with the specified values). At that point the response will be served. 
 In this way, we can make a stub global. For example, anytime a request contains age of 25 ({"age":25}), 

@@ -42,7 +42,7 @@ Your request could have a lot of different parameters but undersatnd that a matc
 specified parameters are found (with the specified values). At that point the response will be served. 
 In this way, we can make a stub global. For example, anytime a request contains age of 25 ({"age":25}), 
 serve up this response. Your actual request could contain age, address, id and so forth but since we are 
-including age there will be a match. So any request that contains the age parameter will recieve the 
+specifying age there will be a match. So any request that contains the age parameter will recieve the 
 corresponding response. You can also remove the request body entirely, at this point only the endpoint 
 needs to match for the response to be served. This is an overview, simply to give you an idea of how 
 flexible wiremock is. For further information I recommend reading and learning directly from their website 

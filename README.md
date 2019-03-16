@@ -1,4 +1,6 @@
     
+OVERVIEW
+
 1. To launch a standalone server run "java -jar wiremock-standalone-2.20.0.jar". 
 This command will create two directories, "__files" and "mappings" (if they dont already exist).
 When wiremock starts, by default it will spin up on port 8080 or you can specify a different 
@@ -45,9 +47,6 @@ corresponding response. You can also remove the request body entirely, at this p
 needs to match for the response to be served. This is an overview, simply to give you an idea of how 
 flexible wiremock is. For further information I recommend reading and learning directly from their website 
 at http://wiremock.org . Happy developing!
-
-
-
 
 
 

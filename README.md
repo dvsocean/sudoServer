@@ -45,7 +45,7 @@ Inside each service folder you will find a __files and a mappings directory wher
 be found. 
 
 5. In the request, a stub will seek bodyPatterns, those patterns will usually be under "equalToJson". 
-Your request could have a lot of different parameters but undersatnd that a match will occur when the 
+Your request could have a lot of different parameters but understand that a match will occur when the 
 specified parameters are found (with the specified values). At that point the response will be served. 
 In this way, we can make a stub global. For example, anytime a request contains age of 25 ({"age":25}), 
 serve up this response. Your actual request could contain age, address, id and so forth but since we are 

@@ -24,8 +24,8 @@ mapping file, for the response, you can also indicate "bodyFileName": "path/to/f
 method requires that you actually place the response file in the __files directory, else if the 
 route on the mapping stub is hit it will look for the corresponding body file and not find it, resulting 
 in a error. You can also test this by sending a POST request to /test/server/route and include
-a json body of '{"pin":"1234","securityQuestions":"and then answers"}' if needed, examples on sending 
-a curl request can be found in the root, under "sendCurlRequestExample.txt"
+a json body of '{"pin":"1234","securityQuestions":"and then answers"}'. If needed, examples on sending 
+a curl request can be found under "sendCurlRequestExample.txt"
 
 4. You can also record a req/res with wiremock. For example, your in the middle of development and 
 all your APIs are properly responding. You can capture this behavior for when and if these APIs decide

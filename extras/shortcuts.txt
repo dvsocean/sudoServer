@@ -28,15 +28,18 @@ In that folder, you can create a shell script that will launch the recording ser
 	end tell'
 ------------------------------------------------------------------------------------------>
 
-This will launch three seperate terminal windows, each window running a seperate wiremock instance. This is an example, I imagine 
-you are well versed with shell scripting so maybe I can steal some ideas from you later. One of the main reasons I bring this method
-up is because Ive had situations where I didnt know if a particular service was being hit or not, I only had access to the code I was
-testing. So I would grab a handful of service urls that I imagined were being hit and started a server for them. The recordings confirmed
-my suspicion. 
+This will launch three seperate terminal windows, each window running a seperate wiremock 
+instance. This is an example, I imagine you are well versed with shell scripting so maybe 
+I can steal some ideas from you later. One of the main reasons I bring this method up is 
+because Ive had situations where I didnt know if a particular service was being hit or not,
+I only had access to the code I was testing. So I would grab a handful of service urls that 
+I imagined were being hit and started a server for them. The recordings confirmed my 
+suspicion. 
 
 
 Running the server-
-In the same fashion, you can create a script that will start your server for you. Here is an example script.
+In the same fashion, you can create a script that will start your server for you. Here is 
+an example script.
 
 ------------------------------------------script------------------------------------------>
 #!/bin/zsh

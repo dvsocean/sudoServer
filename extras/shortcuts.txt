@@ -9,7 +9,7 @@ Recording stubs-
 Recording stubs can be easier. For example, you can create a bin folder in your home directory and add it to your path.
 In that folder, you can create a shell script that will launch the recording server (or servers) for you. Here is an example,
 
-------------------------------------------------------------------------------script----------------------------------------------------------------------------------------------->
+------------------------------------------script------------------------------------------>
 #!/bin/bash
 
 	osascript -e 'tell app "Terminal"
@@ -26,7 +26,7 @@ In that folder, you can create a shell script that will launch the recording ser
 		do script "echo LISTENING FOR SERVICE-NAME-3"
 	    do script "java -jar wiremock-standalone-2.20.0.jar --proxy-all http://example.com --record-mappings --port 6400 --root-dir /Users/<user>/Desktop/HTTPtraffic/service-name-3"
 	end tell'
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+------------------------------------------------------------------------------------------>
 
 This will launch three seperate terminal windows, each window running a seperate wiremock instance. This is an example, I imagine 
 you are well versed with shell scripting so maybe I can steal some ideas from you later. One of the main reasons I bring this method
@@ -38,12 +38,12 @@ my suspicion.
 Running the server-
 In the same fashion, you can create a script that will start your server for you. Here is an example script.
 
-----------------------------------------script--------------------------------------->
+------------------------------------------script------------------------------------------>
 #!/bin/zsh
 
 wireMockStandaloneJar="/Users/<user>/Desktop/sudoServer/wiremock-standalone-2.20.0.jar"
 java -jar "$wireMockStandaloneJar" --port 2000
-------------------------------------------------------------------------------------->
+------------------------------------------------------------------------------------------>
 
 This script will start a wiremock instance in whatever directory you are currently in 
 (assuming you are executing out of that new bin directory), this means a __files and a 
@@ -51,9 +51,9 @@ mappings directory will be created if they dont already exist and that directory
 become the root of the server. You can also create an alias in your bash_profile and 
 bypass this method, here is an example.
 
------------------------------------------------alias-------------------------------------------------------->
+------------------------------------------alias------------------------------------------->
 alias startSudoServer="java -jar /Users/docean/Desktop/sudoServer/wiremock-standalone-2.20.0.jar --port 2000"
------------------------------------------------------------------------------------------------------------->
+------------------------------------------------------------------------------------------>
 
 The alias method will of course access the wiremock jar that is in the root of the sudoServer
 folder and use the stubs that already exist. 

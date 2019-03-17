@@ -55,7 +55,7 @@ become the root of the server. You can also create an alias in your bash_profile
 bypass this method, here is an example.
 
 ------------------------------------------alias------------------------------------------->
-alias startSudoServer="java -jar /Users/docean/Desktop/sudoServer/wiremock-standalone-2.20.0.jar --port 2000"
+alias startSudoServer="java -jar /Users/<user>/Desktop/sudoServer/wiremock-standalone-2.20.0.jar --port 2000"
 ------------------------------------------------------------------------------------------>
 
 The alias method will of course access the wiremock jar that is in the root of the sudoServer
